@@ -1,0 +1,20 @@
+{
+  "name": "claude-skills",
+  "owner": {
+    "name": "jhenaoz"
+  },
+  "metadata": {
+    "description": "Personal collection of Claude Code skills",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "youtube-transcript",
+      "source": "./plugins/youtube-transcript",
+      "description": "Download YouTube video transcripts given a URL",
+      "version": "1.0.0",
+      "keywords": ["youtube", "transcript", "subtitles"]
+    }
+  ]
+}
