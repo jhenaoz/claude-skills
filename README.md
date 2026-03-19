@@ -6,7 +6,7 @@ A personal collection of [Claude Code](https://claude.com/claude-code) plugins, 
 
 ```bash
 # Add the marketplace
-/plugin-marketplace add jhenaoz/claude-skills
+/plugin marketplace add jhenaoz/claude-skills
 
 # Install a plugin
 /plugin install youtube-transcript@claude-skills
