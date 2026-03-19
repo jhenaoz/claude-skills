@@ -88,7 +88,10 @@ def main():
     # Use ORIGINAL_CWD to write output relative to the caller's directory
     original_cwd = os.environ.get("ORIGINAL_CWD", os.getcwd())
     default_output = os.path.join(original_cwd, f"transcript_{video_id}.txt")
-    output_file = args.output if args.output else default_output
+    if args.output:
+        output_file = args.output if os.path.isabs(args.output) else os.path.join(original_cwd, args.output)
+    else:
+        output_file = default_output
 
     print(f"Fetching transcript for video: {video_id}", file=sys.stderr)
     text, lang_code = fetch_transcript(video_id, languages)

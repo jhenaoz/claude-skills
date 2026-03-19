@@ -14,14 +14,14 @@ Download the transcript/subtitles from a YouTube video and save it as a text fil
 Run the transcript downloader from the skill directory using `uv`:
 
 ```bash
-ORIGINAL_CWD=$(pwd) && cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0"
+export ORIGINAL_CWD=$(pwd) && cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0"
 ```
 
 - `$0` is the YouTube video URL provided by the user
-- If the user specifies a language, pass it with `-l`: `ORIGINAL_CWD=$(pwd) && cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0" -l <language_codes>`
-- If the user specifies an output file, pass it with `-o` using an absolute path: `ORIGINAL_CWD=$(pwd) && cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0" -o /absolute/path/<filename>`
+- If the user specifies a language, pass it with `-l`: `export ORIGINAL_CWD=$(pwd) && cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0" -l <language_codes>`
+- If the user specifies an output file, pass it with `-o`: `export ORIGINAL_CWD=$(pwd) && cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0" -o <filename>`
 - Default language priority is `en,es` (English first, then Spanish)
-- To list available languages: `cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0" --list-languages`
+- To list available languages: `export ORIGINAL_CWD=$(pwd) && cd ${CLAUDE_SKILL_DIR} && uv run python transcript.py "$0" --list-languages`
 
 ## After downloading
 
