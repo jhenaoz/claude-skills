@@ -15,6 +15,7 @@ A personal collection of [Claude Code](https://claude.com/claude-code) plugins, 
 ## Prerequisites
 
 - [uv](https://docs.astral.sh/uv/) (Python package manager)
+- [ffmpeg](https://ffmpeg.org/) (for video download merging)
 - Python 3.14+
 
 ## Available Plugins
@@ -22,6 +23,7 @@ A personal collection of [Claude Code](https://claude.com/claude-code) plugins, 
 | Plugin | Description | Usage |
 |--------|-------------|-------|
 | `youtube-transcript` | Download YouTube video transcripts | `/youtube-transcript:youtube-transcript <url>` |
+| `youtube-download` | Download YouTube videos as MP4 | `/youtube-download:youtube-download <url>` |
 
 ## Permissions
 

@@ -1,0 +1,8 @@
+{
+  "name": "youtube-download",
+  "version": "1.0.0",
+  "description": "Download YouTube videos as MP4 files",
+  "author": {
+    "name": "jhenaoz"
+  }
+}

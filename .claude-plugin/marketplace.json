@@ -15,6 +15,13 @@
       "description": "Download YouTube video transcripts given a URL",
       "version": "1.0.0",
       "keywords": ["youtube", "transcript", "subtitles"]
+    },
+    {
+      "name": "youtube-download",
+      "source": "./plugins/youtube-download",
+      "description": "Download YouTube videos as MP4 files",
+      "version": "1.0.0",
+      "keywords": ["youtube", "video", "download", "mp4"]
     }
   ]
 }

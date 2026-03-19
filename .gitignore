@@ -12,5 +12,8 @@ wheels/
 # Transcripts (generated output)
 transcript_*.txt
 
+# Downloaded videos
+*.mp4
+
 # Lock files (per-skill, regenerated with uv sync)
 uv.lock
