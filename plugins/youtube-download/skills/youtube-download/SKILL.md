@@ -2,6 +2,7 @@
 name: youtube-download
 description: Download a YouTube video as an MP4 file given its URL. Use when the user wants to download, save, or grab a video from YouTube.
 argument-hint: <youtube-url> [--quality best|1080|720|480|360] [--output file.mp4]
+allowed-tools: Bash(uv run python download.py:*)
 ---
 
 # YouTube Video Downloader

@@ -2,6 +2,7 @@
 name: youtube-transcript
 description: Download a YouTube video transcript given its URL. Use when the user wants to get, fetch, or download a transcript or subtitles from a YouTube video.
 argument-hint: <youtube-url> [--language en,es] [--output file.txt]
+allowed-tools: Bash(uv run python transcript.py:*)
 ---
 
 # YouTube Transcript Downloader
